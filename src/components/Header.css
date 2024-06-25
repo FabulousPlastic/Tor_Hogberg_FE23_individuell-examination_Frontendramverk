@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header-title {
+    margin: 0;
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav ul li {
+    margin: 0;
+  }
+  
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .toggle-button input {
+    display: none;
+  }
+  
+  .toggle-button .slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.2s;
+  }
+  
+  .toggle-button .slider::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.2s;
+  }
+  
+  .toggle-button input:checked + .slider {
+    background-color: #4caf50;
+  }
+  
+  .toggle-button input:checked + .slider::before {
+    transform: translateX(20px);
+  }

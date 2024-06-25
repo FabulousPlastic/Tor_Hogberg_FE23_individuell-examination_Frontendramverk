@@ -1,14 +1,27 @@
 import React from 'react';
+import './AboutPage.css';
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
-    <div>
-      <h1>I am TOR</h1>
-      <p>exploring, learning, creating since 1979.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-      <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
+    <div className="about-container">
+      <svg width="0" height="0">
+        <defs>
+          <mask id="text-mask">
+            <rect width="100%" height="100%" fill="white" />
+            <text x="50%" y="50%" dy=".35em" textAnchor="middle" fontSize="120" fontWeight="bold" fill="black">TOR</text>
+          </mask>
+        </defs>
+      </svg>
+      <div className="intro">
+        <span className="masked-text">I am</span>
+        <span className="large-text">TOR</span>
+        <span className="masked-text">since 1979</span>
+      </div>
+      <p className="description">exploring</p>
+      <p className="description">learning</p>
+      <p className="description">creating</p>
     </div>
   );
-}
+};
 
-export default HomePage;
+export default AboutPage;

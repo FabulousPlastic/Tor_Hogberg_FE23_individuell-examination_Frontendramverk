@@ -1,18 +1,46 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleTheme } from '../themeSlice';
+import './Header.css'; // Import CSS file for styling
 
 const Header = () => {
+  const theme = useSelector((state) => state.theme.value);
+  const dispatch = useDispatch();
+
   return (
-    <header>
-      <nav>
+    <header className="header">
+      <nav className="nav">
         <ul>
-          <li><Link to="/">Om mig</Link></li>
-          <li><Link to="/projects">Projekt</Link></li>
-          <li><Link to="/contact">Kontakt</Link></li>
+          <li>
+            <NavLink exact to="/" activeClassName="active">
+              Who
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/projects" activeClassName="active">
+              What
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" activeClassName="active">
+              Write
+            </NavLink>
+          </li>
         </ul>
       </nav>
+      <div className="toggle-container">
+        <label className="toggle-button">
+          <input 
+            type="checkbox" 
+            checked={theme === 'dark'} 
+            onChange={() => dispatch(toggleTheme())} 
+          />
+          <span className="slider"></span>
+        </label>
+      </div>
     </header>
   );
-}
+};
 
 export default Header;
