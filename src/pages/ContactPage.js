@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
+  const [messageSent, setMessageSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    setMessageSent(false); // Reset message sent status on change
   };
 
   const validate = () => {
@@ -23,9 +25,12 @@ const ContactPage = () => {
     const tempErrors = validate();
     if (Object.keys(tempErrors).length === 0) {
       console.log(formData);
-      // Handle form submission (e.g., send data to an API or display a message)
+      setMessageSent(true);
+      setFormData({ name: '', email: '', message: '' });
+      setErrors({});
     } else {
       setErrors(tempErrors);
+      setMessageSent(false);
     }
   };
 
@@ -56,6 +61,7 @@ const ContactPage = () => {
         {errors.message && <p>{errors.message}</p>}
         <button type="submit">Skicka</button>
       </form>
+      {messageSent && <p>Message sent successfully!</p>}
     </div>
   );
 };
