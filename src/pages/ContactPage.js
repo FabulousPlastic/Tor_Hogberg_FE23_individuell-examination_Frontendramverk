@@ -35,8 +35,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div>
-      <h1>Kontakt</h1>
+    <div>     
       <form onSubmit={handleSubmit}>
         <input
           name="name"

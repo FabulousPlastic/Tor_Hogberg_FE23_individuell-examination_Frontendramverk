@@ -1,6 +1,7 @@
-# My Portfolio
+Work in progress!
 
-This is a single-page application (SPA) built with React to serve as my personal digital CV/portfolio.
+# My Portfolio
+This is a school asignment to build a single-page application (SPA) with React to serve as a digital CV/portfolio.
 
 ## Features
 
