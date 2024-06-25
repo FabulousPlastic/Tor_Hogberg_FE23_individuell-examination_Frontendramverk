@@ -5,7 +5,7 @@ const ProjectsPage = () => {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    axios.get('https://api.github.com/users/your-username/repos')
+    axios.get('https://api.github.com/users/FabulousPlastic/repos')
       .then(response => setRepos(response.data))
       .catch(error => console.log(error));
   }, []);
