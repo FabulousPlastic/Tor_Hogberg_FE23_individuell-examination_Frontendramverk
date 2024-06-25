@@ -7,7 +7,7 @@ import HomePage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import Footer from './components/Footer';
-import './App.css'; // Importera CSS-filen
+import './App.css'; // Import CSS-filen
 
 const App = () => {
   const theme = useSelector((state) => state.theme.value);
@@ -19,6 +19,10 @@ const App = () => {
       dispatch(setTheme(savedTheme));
     }
   }, [dispatch]);
+
+  useEffect(() => {
+    document.body.className = theme; // Sätt klassnamn på body baserat på temat
+  }, [theme]);
 
   return (
     <div className={theme}>

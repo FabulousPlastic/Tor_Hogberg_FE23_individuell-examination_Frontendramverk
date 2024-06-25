@@ -2,11 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
 }
 
-header {
+.header {
   background-color: #333;
   color: white;
   padding: 1rem;
@@ -78,16 +76,17 @@ nav ul li a {
 }
 
 /* Light Theme */
-.light {
+.light body {
   background-color: #f4f4f4;
   color: #333;
 }
 
 /* Dark Theme */
-.dark {
+.dark body {
   background-color: #333;
   color: #f4f4f4;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -100,6 +99,8 @@ input, textarea {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #fff;
+  color: #333;
 }
 
 button {
@@ -118,4 +119,25 @@ button:hover {
 p {
   color: red;
   font-size: 0.9rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
 }
