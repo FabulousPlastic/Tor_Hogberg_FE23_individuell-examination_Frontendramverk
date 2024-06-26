@@ -1,33 +1,45 @@
 .about-container {
-    text-align: center;
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .intro {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
   }
   
-  .large-text {
-    font-size: 120px;
-    font-weight: bold;
-    margin: 0 20px;
-    position: relative;
-    color: currentColor;
-  }
-  
-  .masked-text {
-    font-size: 24px;
-    position: relative;
-    color: currentColor;
-    /* mask: url(#text-mask);
-    -webkit-mask: url(#text-mask); */
-  }
-  
-  .description {
-    font-size: 36px;
-    margin: 10px 0;
-    color: currentColor;
+    .large-text {
+        font-size: 38rem;
+        font-weight: bold;
+        color: white;
+        letter-spacing: -24rem;
+        mix-blend-mode: difference;
+    }
+
+    .medium-text {
+        font-size: 30rem;
+        font-weight: bold;
+        color: white;
+        letter-spacing: -15rem;
+        mix-blend-mode: difference;
+    }
+
+    .small-text {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: currentColor;
+        mix-blend-mode: difference;
+        
+    }
+
+.slogan-container {
+    display: flex;
+    position:absolute;
+}
+
+  .slogan {
+    font-size: 3rem;
+    color: white;
+    mix-blend-mode: difference;
   }
