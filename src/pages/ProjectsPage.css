@@ -27,9 +27,9 @@
   margin: 0;
   padding: 0;
   color: #4caf50;
-  white-space: nowrap; /* Förhindra att text bryts */
-  overflow: hidden; /* Dölj överflödig text */
-  text-overflow: ellipsis; /* Lägg till ellipsis för överflödig text */
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 .repo-item p {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './ProjectsPage.css'; // Import CSS-filen för styling
+import './ProjectsPage.css'; 
 
 const ProjectsPage = () => {
   const [repos, setRepos] = useState([]);
@@ -8,7 +8,7 @@ const ProjectsPage = () => {
   useEffect(() => {
     axios.get('https://api.github.com/users/FabulousPlastic/repos')
       .then(response => {
-        // Sortera repositorierna efter skapelsedatum, nyaste först
+        
         const sortedRepos = response.data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
         setRepos(sortedRepos);
       })

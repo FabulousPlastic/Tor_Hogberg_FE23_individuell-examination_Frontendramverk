@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleTheme } from '../themeSlice';
-import './Header.css'; // Import CSS file for styling
+import './Header.css';
 
 const Header = () => {
   const theme = useSelector((state) => state.theme.value);

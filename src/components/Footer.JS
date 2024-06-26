@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Importera CSS-filen för styling
+import './Footer.css'; 
 import instagramLogo from '../assets/images/instagram-logo.png';
 import twitterLogo from '../assets/images/twitter-logo.png';
 import linkedinLogo from '../assets/images/linkedin-logo.png';

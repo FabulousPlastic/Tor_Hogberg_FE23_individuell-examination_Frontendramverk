@@ -7,7 +7,7 @@ import AboutPage from './pages/AboutPage'; // "Who" page
 import ProjectsPage from './pages/ProjectsPage'; // "What" page
 import ContactPage from './pages/ContactPage'; // "Write" page
 import Footer from './components/Footer';
-import './App.css'; // Import CSS file
+import './App.css';
 
 const App = () => {
   const theme = useSelector((state) => state.theme.value);
@@ -21,7 +21,7 @@ const App = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    document.body.className = theme; // Set className on body based on theme
+    document.body.className = theme; 
   }, [theme]);
 
   return (

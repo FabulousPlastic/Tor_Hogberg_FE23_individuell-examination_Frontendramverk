@@ -8,7 +8,7 @@ const ContactPage = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    setMessageSent(false); // Reset message sent status on change
+    setMessageSent(false); 
   };
 
   const validate = () => {

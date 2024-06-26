@@ -1,45 +1,48 @@
+
 .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .intro {
-    display: flex;
-  }
-  
-    .large-text {
-        font-size: 38rem;
-        font-weight: bold;
-        color: white;
-        letter-spacing: -24rem;
-        mix-blend-mode: difference;
-    }
-
-    .medium-text {
-        font-size: 30rem;
-        font-weight: bold;
-        color: white;
-        letter-spacing: -15rem;
-        mix-blend-mode: difference;
-    }
-
-    .small-text {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: currentColor;
-        mix-blend-mode: difference;
-        
-    }
-
-.slogan-container {
-    display: flex;
-    position:absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
 }
 
-  .slogan {
-    font-size: 3rem;
-    color: white;
-    mix-blend-mode: difference;
-  }
+.intro {
+  display: flex;
+}
+
+.large-text {
+  font-size: 38rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: -12rem;
+  mix-blend-mode: difference;
+}
+
+.medium-text {
+  font-size: 30rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: -15rem;
+  mix-blend-mode: difference;
+}
+
+.small-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: currentColor;
+  mix-blend-mode: difference;
+}
+
+.slogan-container {
+  display: flex;
+  position: absolute;
+}
+
+.slogan {
+  font-size: 3rem;
+  color: white;
+  mix-blend-mode: difference;
+}
